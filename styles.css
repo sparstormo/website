@@ -234,6 +234,11 @@ body.nav-open .nav-toggle-icon::after {
 }
 
 .about-image img {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 28px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(180, 135, 79, 0.25);
@@ -298,6 +303,10 @@ body.nav-open .nav-toggle-icon::after {
 }
 
 .hero-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
   border-radius: 24px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(180, 135, 79, 0.25);
@@ -373,6 +382,10 @@ body.nav-open .nav-toggle-icon::after {
 }
 
 .image-stack img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
   border-radius: 16px;
   border: 1px solid rgba(180, 135, 79, 0.2);
   box-shadow: var(--shadow);
@@ -462,8 +475,11 @@ textarea:focus {
 }
 
 .footer-grid img {
-  max-width: 420px;
+  max-width: 480px;
   width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Blog */
