@@ -6,7 +6,9 @@
     <title>Disclaimer | Stormo AI Law</title>
     <meta name="description" content="Legal disclaimer for Stormo AI Law website." />
     <meta name="robots" content="noindex, follow" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,16 +18,20 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap">
         <a href="index.html" class="brand">
-          <img src="stormoAIlawhead.jpg" alt="Stormo AI Law logo" />
+          <img src="stormoAIlawhead.jpg" alt="Stormo AI Law logo" width="60" height="60" />
           <div>
             <p class="brand-title">Stormo AI Law</p>
             <p class="brand-subtitle">Attorney at Law · Technology Counsel</p>
           </div>
         </a>
-        <nav class="nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="nav" id="site-nav">
           <a href="index.html">Home</a>
           <a href="index.html#practice">Practice</a>
           <a href="index.html#approach">Approach</a>
@@ -37,7 +43,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="band" style="padding-top: 4rem;">
         <div class="wrap" style="max-width: 700px;">
           <h1>Disclaimer</h1>
@@ -99,12 +105,13 @@
 
     <footer class="site-footer">
       <div class="wrap footer-grid">
-        <img src="stormoAIlawnarrowbanner.jpg" alt="Stormo AI Law" loading="lazy" />
+        <img src="stormoAIlawnarrowbanner.jpg" alt="Stormo AI Law" width="1024" height="1024" loading="lazy" />
         <p>© 2026 Stormo AI Law. All rights reserved.</p>
         <p style="font-size: 0.9rem; margin-top: 0.5rem;">
           <a href="disclaimer.html">Disclaimer</a> · <a href="privacy.html">Privacy Policy</a>
         </p>
       </div>
     </footer>
+    <script src="nav.js"></script>
   </body>
 </html>

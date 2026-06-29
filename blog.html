@@ -7,15 +7,18 @@
     <meta name="description" content="Stormo AI Law blog — insights on cyber law, compliance, AI, privacy, and cybersecurity for businesses." />
     <meta property="og:title" content="Blog · Stormo AI Law" />
     <meta property="og:description" content="Insights on cyber law, compliance, AI, privacy, and cybersecurity." />
-    <meta property="og:image" content="stormoAIlawhead.jpg" />
+    <meta property="og:image" content="https://stormo.com/stormoAIlawhead.jpg" />
+    <meta property="og:image:alt" content="Stormo AI Law logo" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://stormo.com/blog.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Blog · Stormo AI Law" />
     <meta name="twitter:description" content="Insights on cyber law, compliance, AI, privacy, and cybersecurity." />
-    <meta name="twitter:image" content="stormoAIlawhead.jpg" />
+    <meta name="twitter:image" content="https://stormo.com/stormoAIlawhead.jpg" />
     <link rel="canonical" href="https://stormo.com/blog.html" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +29,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Blog",
+      "@type": "WebPage",
       "name": "Stormo AI Law Blog",
       "description": "Insights on cyber law, compliance, AI, privacy, and cybersecurity for businesses.",
       "url": "https://stormo.com/blog.html",
@@ -42,16 +45,20 @@
     </script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap">
         <a href="index.html" class="brand">
-          <img src="stormoAIlawhead.jpg" alt="Stormo AI Law logo" />
+          <img src="stormoAIlawhead.jpg" alt="Stormo AI Law logo" width="60" height="60" />
           <div>
             <p class="brand-title">Stormo AI Law</p>
             <p class="brand-subtitle">Attorney at Law · Technology Counsel</p>
           </div>
         </a>
-        <nav class="nav">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="nav" id="site-nav">
           <a href="index.html">Home</a>
           <a href="index.html#practice">Practice</a>
           <a href="index.html#approach">Approach</a>
@@ -63,7 +70,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="blog-hero">
         <div class="wrap">
           <p class="kicker">Insights</p>
@@ -79,27 +86,13 @@
 
       <section class="band">
         <div class="wrap">
-          <div class="blog-list">
-            <article class="post-card">
-              <time class="post-date" datetime="2026-02-05">February 5, 2026</time>
-              <h2><a href="#">Why businesses need a cyber law strategy</a></h2>
-              <p>
-                A short placeholder for your first post. Replace this with your
-                excerpt and link the title to your post page (e.g.
-                blog/your-post-slug.html).
-              </p>
-              <a href="#" class="post-link">Read more</a>
-            </article>
-            <article class="post-card">
-              <time class="post-date" datetime="2026-02-01">February 1, 2026</time>
-              <h2><a href="#">Placeholder: AI and compliance</a></h2>
-              <p>
-                Add more post cards below by copying this article block. Each
-                post can link to its own HTML file in a blog/ folder when you’re
-                ready.
-              </p>
-              <a href="#" class="post-link">Read more</a>
-            </article>
+          <div class="blog-empty">
+            <h2>Coming soon</h2>
+            <p>
+              Blog posts are on the way. In the meantime, follow
+              <a href="https://x.com/sparstormo" target="_blank" rel="noopener noreferrer">@sparstormo on X</a>
+              for insights on cyber law, compliance, AI, and privacy.
+            </p>
           </div>
         </div>
       </section>
@@ -119,12 +112,13 @@
 
     <footer class="site-footer">
       <div class="wrap footer-grid">
-        <img src="stormoAIlawnarrowbanner.jpg" alt="Stormo AI Law" loading="lazy" />
+        <img src="stormoAIlawnarrowbanner.jpg" alt="Stormo AI Law" width="1024" height="1024" loading="lazy" />
         <p>© 2026 Stormo AI Law. All rights reserved.</p>
         <p style="font-size: 0.9rem; margin-top: 0.5rem;">
           <a href="disclaimer.html">Disclaimer</a> · <a href="privacy.html">Privacy Policy</a>
         </p>
       </div>
     </footer>
+    <script src="nav.js"></script>
   </body>
 </html>
