@@ -1,11 +1,12 @@
 :root {
   color-scheme: only light;
-  --ink: #1f1f1f;
-  --muted: #5b5b5b;
+  --ink: #141414;
+  --muted: #5a5a5a;
   --accent: #b4874f;
   --accent-dark: #8c6538;
   --parchment: #f6f1ea;
   --linen: #efe6da;
+  --panel-dark: #111111;
   --shadow: 0 24px 40px rgba(20, 17, 14, 0.12);
 }
 
@@ -42,7 +43,7 @@ a {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: rgba(246, 241, 234, 0.9);
+  background: rgba(246, 241, 234, 0.92);
   border-bottom: 1px solid rgba(150, 120, 80, 0.2);
 }
 
@@ -140,12 +141,10 @@ body.nav-open .nav-toggle-icon::after {
   gap: 1rem;
 }
 
-.brand img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(180, 135, 79, 0.35);
+.brand-mark {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
 }
 
 .brand-title {
@@ -304,12 +303,25 @@ body.nav-open .nav-toggle-icon::after {
 
 .hero-image img {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
   border-radius: 24px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(180, 135, 79, 0.25);
+}
+
+.graphic-panel {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(180, 135, 79, 0.25);
+}
+
+.graphic-panel img,
+.graphic-panel svg {
+  width: 100%;
+  display: block;
 }
 
 .band {
@@ -339,6 +351,12 @@ body.nav-open .nav-toggle-icon::after {
   background: #fff;
   box-shadow: var(--shadow);
   border: 1px solid rgba(180, 135, 79, 0.2);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
 }
 
 .cards h3 {
@@ -376,27 +394,39 @@ body.nav-open .nav-toggle-icon::after {
   color: var(--accent-dark);
 }
 
-.image-stack {
-  display: grid;
-  gap: 1rem;
-}
-
-.image-stack img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 16px;
-  border: 1px solid rgba(180, 135, 79, 0.2);
-  box-shadow: var(--shadow);
-}
-
 .insights-head {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 1.5rem;
   flex-wrap: wrap;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pillar {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(180, 135, 79, 0.2);
+  text-align: center;
+}
+
+.pillar strong {
+  display: block;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.pillar span {
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .contact {
@@ -414,6 +444,7 @@ body.nav-open .nav-toggle-icon::after {
   margin-top: 1.5rem;
   display: grid;
   gap: 0.5rem;
+  font-style: normal;
 }
 
 .contact-card {
@@ -474,12 +505,26 @@ textarea:focus {
   text-align: center;
 }
 
-.footer-grid img {
-  max-width: 480px;
-  width: 100%;
-  aspect-ratio: 3 / 1;
-  object-fit: cover;
-  object-position: center;
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand .brand-mark {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-brand p {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.footer-links {
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
 }
 
 /* Blog */
