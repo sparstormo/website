@@ -318,10 +318,20 @@ body.nav-open .nav-toggle-icon::after {
   border: 1px solid rgba(180, 135, 79, 0.25);
 }
 
+.about-hero .about-copy {
+  max-width: 48rem;
+}
+
 .graphic-panel img,
 .graphic-panel svg {
   width: 100%;
   display: block;
+}
+
+.graphic-panel img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
 }
 
 .band {
