@@ -1,0 +1,10 @@
+.DS_Store
+.vercel
+.env
+.env.*
+!.env.example
+
+# Local scratch / unused assets (canonical copies live in assets/)
+image.jpg
+image2.jpg
+grok-*.jpg
